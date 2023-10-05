@@ -95,7 +95,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButCliActionPerformed
-        // TODO add your handling code here:
+       java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new TelaCliente().setVisible(true);
+            }
+       });
     }//GEN-LAST:event_ButCliActionPerformed
 
     private void ButFunActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButFunActionPerformed
